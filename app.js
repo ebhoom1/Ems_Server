@@ -55,6 +55,7 @@ const io = socketIO(server, {
     cors: {
         origin: ['https://ocems.ebhoom.com','https://api.ocems.ebhoom.com','https://ems.ebhoom.com','http://localhost:3000','http://localhost:3002','http://localhost:3001'], // Include other origins as needed
         methods: ["GET", "POST","PUT","PATCH","DELETE"],
+        credentials: true, // Allow credentials
     }
 });
 // Export io and server instances
@@ -70,7 +71,19 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT','PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
-
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', req.headers.origin);
+    res.header('Access-Control-Allow-Credentials', 'true');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    next();
+  });
+  
+app.get('/cors-test', (req, res) => {
+    res.set('Access-Control-Allow-Origin', req.headers.origin);
+    res.set('Access-Control-Allow-Credentials', 'true');
+    res.send('CORS is working!');
+  });
 
 // app.options('*', cors({
 //     origin: (origin, callback) => {
@@ -83,11 +96,7 @@ app.use(cors({
 //     credentials: true,
 // }));
 
-app.use((req, res, next) => {
-    console.log('Origin:', req.headers.origin);
-    console.log('Method:', req.method);
-    next();
-});
+
 
 app.use(cookieParser());
 app.use(express.json());
