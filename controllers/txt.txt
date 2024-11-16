@@ -1,0 +1,768 @@
+ph: data.ph !== 'N/A' ? data.ph : null,
+            TDS: data.tds !== 'N/A' ? data.tds : null,
+            turbidity: data.turbidity !== 'N/A' ? data.turbidity : null,
+            temperature: data.temperature !== 'N/A' ? data.temperature : null,
+            BOD: data.bod !== 'N/A' ? data.bod : null,
+            COD: data.cod !== 'N/A' ? data.cod : null,
+            TSS: data.tss !== 'N/A' ? data.tss : null,
+            ORP: data.orp !== 'N/A' ? data.orp : null,
+            nitrate: data.nitrate !== 'N/A' ? data.nitrate : null,
+            ammonicalNitrogen: data.ammonicalNitrogen !== 'N/A' ? data.ammonicalNitrogen : null,
+            DO: data.DO !== 'N/A' ? data.DO : null,
+            chloride: data.chloride !== 'N/A' ? data.chloride : null,
+            Flow: data.Flow !== 'N/A' ? data.Flow : null,
+            CO: data.CO !== 'N/A' ? data.CO : null,
+            NOX: data.NOX !== 'N/A' ? data.NOX : null,
+            Pressure: data.Pressure !== 'N/A' ? data.Pressure : null,
+            Flouride: data.Flouride !== 'N/A' ? data.Flouride : null,
+            PM: data.PM !== 'N/A' ? data.PM : null,
+            SO2: data.SO2 !== 'N/A' ? data.SO2 : null,
+            NO2: data.NO2 !== 'N/A' ? data.NO2 : null,
+            Mercury: data.Mercury !== 'N/A' ? data.Mercury : null,
+            PM10: data.PM10 !== 'N/A' ? data.PM10 : null,
+            PM25: data.PM25 !== 'N/A' ? data.PM25 : null,
+            NOH: data.NOH !== 'N/A' ? data.NOH : null,
+            NH3: data.NH3 !== 'N/A' ? data.NH3 : null,
+            WindSpeed: data.WindSpeed !== 'N/A' ? data.WindSpeed : null,
+            WindDir: data.WindDir !== 'N/A' ? data.WindDir : null,
+            AirTemperature: data.AirTemperature !== 'N/A' ? data.AirTemperature : null,
+            Humidity: data.Humidity !== 'N/A' ? data.Humidity : null,
+            solarRadiation: data.solarRadiation !== 'N/A' ? data.solarRadiation : null,
+            DB: data.DB !== 'N/A' ? data.DB : null,
+            inflow: data.inflow !== 'N/A' ? data.inflow : null,
+            finalflow: data.finalflow !== 'N/A' ? data.finalflow : null,
+            energy: data.energy !== 'N/A' ? data.energy : null,
+            voltage: data.voltage !== 'N/A' ? data.voltage : null,
+            current: data.current !== 'N/A' ? data.current : null,
+            power: data.power !== 'N/A' ? data.power : null,
+            
+            // Add stack_1 fields
+            stack_2_flow: data.stack_2_flow !== 'N/A' ? data.stack_2_flow : null,
+            stack_2_CO: data.stack_2_CO !== 'N/A' ? data.stack_2_CO : null,
+            stack_2_NOX: data.stack_2_NOX !== 'N/A' ? data.stack_2_NOX : null,
+            stack_2_Pressure: data.stack_2_Pressure !== 'N/A' ? data.stack_2_Pressure : null,
+            stack_2_Flouride: data.stack_2_Flouride !== 'N/A' ? data.stack_2_Flouride : null,
+            stack_2_PM: data.stack_2_PM !== 'N/A' ? data.stack_2_PM : null,
+            stack_2_SO2: data.stack_2_SO2 !== 'N/A' ? data.stack_2_SO2 : null,
+            stack_2_NO2: data.stack_2_NO2 !== 'N/A' ? data.stack_2_NO2 : null,
+            stack_2_Mercury: data.stack_2_Mercury !== 'N/A' ? data.stack_2_Mercury : null,
+            stack_2_PM10: data.stack_2_PM10 !== 'N/A' ? data.stack_2_PM10 : null,
+            stack_2_PM25: data.stack_2_PM25 !== 'N/A' ? data.stack_2_PM25 : null,
+            stack_2_NOH: data.stack_2_NOH !== 'N/A' ? data.stack_2_NOH : null,
+            stack_2_NH3: data.stack_2_NH3 !== 'N/A' ? data.stack_2_NH3 : null,
+            stack_2_WindSpeed: data.stack_2_WindSpeed !== 'N/A' ? data.stack_2_WindSpeed : null,
+            stack_2_WindDir: data.stack_2_WindDir !== 'N/A' ? data.stack_2_WindDir : null,
+            stack_2_AirTemperature: data.stack_2_AirTemperature !== 'N/A' ? data.stack_2_AirTemperature : null,
+            stack_2_Humidity: data.stack_2_Humidity !== 'N/A' ? data.stack_2_Humidity : null,
+            stack_2_solarRadiation: data.stack_2_solarRadiation !== 'N/A' ? data.stack_2_solarRadiation : null,
+        
+            // Add stack_2 fields
+            STACK_32_Ammonia_flow: data.STACK_32_Ammonia_flow !== 'N/A' ? data.STACK_32_Ammonia_flow : null,
+            STACK_32_Ammonia_CO: data.STACK_32_Ammonia_CO !== 'N/A' ? data.STACK_32_Ammonia_CO : null,
+            STACK_32_Ammonia_NOX: data.STACK_32_Ammonia_NOX !== 'N/A' ? data.STACK_32_Ammonia_NOX : null,
+            STACK_32_Ammonia_Pressure: data.STACK_32_Ammonia_Pressure !== 'N/A' ? data.STACK_32_Ammonia_Pressure : null,
+            STACK_32_Ammonia_Flouride: data.STACK_32_Ammonia_Flouride !== 'N/A' ? data.STACK_32_Ammonia_Flouride : null,
+            STACK_32_Ammonia_PM: data.STACK_32_Ammonia_PM !== 'N/A' ? data.STACK_32_Ammonia_PM : null,
+            STACK_32_Ammonia_SO2: data.STACK_32_Ammonia_SO2 !== 'N/A' ? data.STACK_32_Ammonia_SO2 : null,
+            STACK_32_Ammonia_NO2: data.STACK_32_Ammonia_NO2 !== 'N/A' ? data.STACK_32_Ammonia_NO2 : null,
+            STACK_32_Ammonia_Mercury: data.STACK_32_Ammonia_Mercury !== 'N/A' ? data.STACK_32_Ammonia_Mercury : null,
+            STACK_32_Ammonia_PM10: data.STACK_32_Ammonia_PM10 !== 'N/A' ? data.STACK_32_Ammonia_PM10 : null,
+            STACK_32_Ammonia_PM25: data.STACK_32_Ammonia_PM25 !== 'N/A' ? data.STACK_32_Ammonia_PM25 : null,
+            STACK_32_Ammonia_NOH: data.STACK_32_Ammonia_NOH !== 'N/A' ? data.STACK_32_Ammonia_NOH : null,
+            STACK_32_Ammonia_NH3: data.STACK_32_Ammonia_NH3 !== 'N/A' ? data.STACK_32_Ammonia_NH3 : null,
+            STACK_32_Ammonia_WindSpeed: data.STACK_32_Ammonia_WindSpeed !== 'N/A' ? data.STACK_32_Ammonia_WindSpeed : null,
+            STACK_32_Ammonia_WindDir: data.STACK_32_Ammonia_WindDir !== 'N/A' ? data.STACK_32_Ammonia_WindDir : null,
+            STACK_32_Ammonia_AirTemperature: data.STACK_32_Ammonia_AirTemperature !== 'N/A' ? data.STACK_32_Ammonia_AirTemperature : null,
+            STACK_32_Ammonia_Humidity: data.STACK_32_Ammonia_Humidity !== 'N/A' ? data.STACK_32_Ammonia_Humidity : null,
+            STACK_32_Ammonia_solarRadiation: data.STACK_32_Ammonia_solarRadiation !== 'N/A' ? data.STACK_32_Ammonia_solarRadiation : null,
+        
+
+        client.on('message', async (topic, message) => {
+        try {
+            console.log('Received message on topic:', topic);
+        console.log('Message:', message.toString());
+
+            const data = JSON.parse(message.toString());
+            const { product_id } = data;
+
+            if (topic === 'ebhoomPub') {
+                const userDetails = await userdb.findOne({ productID: product_id });
+                if (userDetails) {
+                    Object.assign(data, {
+                        userName: userDetails.userName,
+                        email: userDetails.email,
+                        mobileNumber: userDetails.mobileNumber,
+                        companyName: userDetails.companyName,
+                        industryType: userDetails.industryType,
+                        timestamp: moment().format('DD/MM/YYYY'),
+                        time: data.time || moment().format('HH:mm:ss') // Set default time if not provided
+                    });
+  
+                    await axios.post('https://api.ocems.ebhoom.com/api/handleSaveMessage', data);
+                    io.to(product_id.toString()).emit('data', data);
+                    console.log('Data entered',data)
+                } else {
+                    console.error(`No user details found for product_id: ${product_id}`);
+                }
+            }
+        } catch (error) {
+            console.error('Error handling message:', error);
+        }
+    });
+
+
+    parameter exceedence handleExceedValues
+
+    // const handleExceedValues = async () => {
+//     try {
+//         // Fetch the latest IoT data entry
+//         const latestData = await IotData.findOne().sort({ timestamp: -1 });
+//         console.log('latestData:', latestData);
+//         if (!latestData) {
+//             console.error('No IoT data found');
+//             return;
+//         }
+
+//         // Find the user based on the latestData's userName
+//         const user = await userdb.findOne({ userName: latestData.userName });
+//         console.log('User:', user);
+
+//         if (!user) {
+//             console.error('User not found');
+//             return;
+//         }
+
+//         if (user.userType === 'user') {
+//             if (!user.industryType) {
+//                 console.error(`User with ID ${user.userName} has no industry type specified.`);
+//                 return;
+//             }
+
+//             // Fetch the industry thresholds
+//             const industryThresholds = await CalibrationExceedValues.findOne({ industryType: user.industryType });
+//             console.log('Industry Thresholds:', industryThresholds);
+
+//             if (!industryThresholds) {
+//                 console.error(`No thresholds found for industry type: ${user.industryType}`);
+//                 return;
+//             }
+
+//             // Define parameters to be checked
+// const exceedParameters = [
+//     { parameter: 'ph', value: latestData.ph, aboveThreshold: industryThresholds.phAbove, belowThreshold: industryThresholds.phBelow },
+//     { parameter: 'turbidity', value: latestData.turbidity, threshold: industryThresholds.turbidity },
+//     { parameter: 'ORP', value: latestData.ORP, threshold: industryThresholds.ORP },
+//     { parameter: 'TDS', value: latestData.TDS, threshold: industryThresholds.TDS },
+//     { parameter: 'temperature', value: latestData.temperature, threshold: industryThresholds.temperature },
+//     { parameter: 'BOD', value: latestData.BOD, threshold: industryThresholds.BOD },
+//     { parameter: 'COD', value: latestData.COD, threshold: industryThresholds.COD },
+//     { parameter: 'TSS', value: latestData.TSS, threshold: industryThresholds.TSS },
+//     { parameter: 'PM', value: latestData.PM, threshold: industryThresholds.PM },
+//     { parameter: 'nitrate', value: latestData.nitrate, threshold: industryThresholds.nitrate },
+//     { parameter: 'ammonicalNitrogen', value: latestData.ammonicalNitrogen, threshold: industryThresholds.ammonicalNitrogen },
+//     { parameter: 'DO', value: latestData.DO, threshold: industryThresholds.DO },
+//     { parameter: 'chloride', value: latestData.chloride, threshold: industryThresholds.chloride },
+//     { parameter: 'SO2', value: latestData.SO2, threshold: industryThresholds.SO2 },
+//     { parameter: 'NO2', value: latestData.NO2, threshold: industryThresholds.NO2 },
+//     { parameter: 'Mercury', value: latestData.Mercury, threshold: industryThresholds.Mercury },
+//     { parameter: 'PM10', value: latestData.PM10, threshold: industryThresholds.PM10 },
+//     { parameter: 'PM25', value: latestData.PM25, threshold: industryThresholds.PM25 },
+//     { parameter: 'NOH', value: latestData.NOH, threshold: industryThresholds.NOH },
+//     { parameter: 'NH3', value: latestData.NH3, threshold: industryThresholds.NH3 },
+//     { parameter: 'WindSpeed', value: latestData.WindSpeed, threshold: industryThresholds.WindSpeed },
+//     { parameter: 'WindDir', value: latestData.WindDir, threshold: industryThresholds.WindDir },
+//     { parameter: 'AirTemperature', value: latestData.AirTemperature, threshold: industryThresholds.AirTemperature },
+//     { parameter: 'Humidity', value: latestData.Humidity, threshold: industryThresholds.Humidity },
+//     { parameter: 'solarRadiation', value: latestData.solarRadiation, threshold: industryThresholds.solarRadiation },
+//     { parameter: 'DB', value: latestData.DB, threshold: industryThresholds.DB },
+//     { parameter: 'inflow', value: latestData.inflow, threshold: industryThresholds.inflow },
+//     { parameter: 'finalflow', value: latestData.finalflow, threshold: industryThresholds.finalflow },
+//     { parameter: 'energy', value: latestData.energy, threshold: industryThresholds.energy },
+//     // Add other parameters if needed
+//   ];
+  
+
+//             // Check if any parameter exceeds the threshold
+//             const exceedances = [];
+//             for (const { parameter, value, aboveThreshold, belowThreshold, threshold } of exceedParameters) {
+//                 if ((aboveThreshold && value >= aboveThreshold) || (belowThreshold && value <= belowThreshold) || (threshold && value >= threshold)) {
+//                     console.log(`Exceed detected for parameter: ${parameter}, value: ${value}, user: ${user.userName}`);
+//                     exceedances.push({ parameter, value });
+//                 }
+//             }
+
+//             // Save all exceedances and send notifications
+//             for (const exceed of exceedances) {
+//                 await saveExceedValue(exceed.parameter, exceed.value, user);
+//                 await sendNotification(exceed.parameter, exceed.value, user);
+//             }
+//         } 
+
+//         console.log('Exceed values handled successfully');
+//     } catch (error) {
+//         console.error('Error handling exceed values:', error);
+//     }
+// };
+
+
+
+//Difference Data calculations 
+//inflow, finalflow,Energy
+
+
+const calculateAndSaveDailyDifferences = async () => {
+    try {
+        // Set the test range to 2:10 AM and 2:30 AM
+        const now = new Date();
+        const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 6, 40, 0); // 2:10 AM
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 10, 10, 0);  // 2:30 AM
+
+        console.log(`Start of test range: ${startOfDay}`);
+        console.log(`End of test range: ${endOfDay}`);
+
+        // Fetch the first and last data entries for the specified time range
+        const initialData = await IotData.findOne({ timestamp: { $gte: startOfDay } }).sort({ timestamp: 1 });
+        const finalData = await IotData.findOne({ timestamp: { $lte: endOfDay } }).sort({ timestamp: -1 });
+
+        // Ensure data is available
+        if (!initialData) {
+            console.log('No initial data found for the specified range.');
+            return;
+        }
+
+        if (!finalData) {
+            console.log('No final data found for the specified range.');
+            return;
+        }
+
+        console.log(`Initial data: ${JSON.stringify(initialData, null, 2)}`);
+        console.log(`Final data: ${JSON.stringify(finalData, null, 2)}`);
+
+        // Helper function to extract energy, inflow, and finalflow from stackData
+        const extractValues = (data) => {
+            let inflow = 0, finalflow = 0, energy = 0;
+            data.stackData.forEach((stack) => {
+                if (stack.inflow) inflow = parseFloat(stack.inflow);
+                if (stack.finalflow) finalflow = parseFloat(stack.finalflow);
+                if (stack.energy) energy = parseFloat(stack.energy);
+            });
+            return { inflow, finalflow, energy };
+        };
+
+        // Extract values from initial and final data
+        const initialValues = extractValues(initialData);
+        const finalValues = extractValues(finalData);
+
+        // Validate required fields
+        const requiredFields = ['inflow', 'finalflow', 'energy'];
+        for (const field of requiredFields) {
+            if (typeof initialValues[field] === 'undefined' || typeof finalValues[field] === 'undefined') {
+                console.log(`Missing field ${field} in initial or final data.`);
+                return;
+            }
+        }
+
+        // Calculate differences
+        const inflowDifference = finalValues.inflow - initialValues.inflow;
+        const finalflowDifference = finalValues.finalflow - initialValues.finalflow;
+        const energyDifference = finalValues.energy - initialValues.energy;
+
+        // Create and save a new DifferenceData entry
+        const differenceEntry = new DifferenceData({
+            date: moment(startOfDay).format('DD/MM/YYYY'),
+            day: moment(startOfDay).format('dddd'),
+            time:moment(startOfDay).format('HH:MM:SS'),
+            userName: initialData.userName,
+            productId: initialData.product_id,
+            initialInflow: initialValues.inflow,
+            finalInflow: finalValues.inflow,
+            inflowDifference: inflowDifference,
+            initialFinalflow: initialValues.finalflow,
+            finalFinalflow: finalValues.finalflow,
+            finalflowDifference: finalflowDifference,
+            initialEnergy: initialValues.energy,
+            finalEnergy: finalValues.energy,
+            energyDifference: energyDifference,
+        }); 
+
+        await differenceEntry.save();
+        console.log(`Difference entry saved for ${moment(startOfDay).format('DD/MM/YYYY')}`);
+    } catch (error) {
+        console.error('Error calculating and saving daily differences:', error);
+    }
+};
+
+
+
+// calculateAndSaveDailyDifferences()
+// Schedule the task to run once a day at midnight
+// cron.schedule('0 0 * * *', calculateAndSaveDailyDifferences);
+// Schedule the task to run every day at 10:10 AM
+cron.schedule('10 10 * * *', () => {
+    console.log('Scheduled task started at 10:10 AM');
+    calculateAndSaveDailyDifferences();
+});
+
+const findFirstAndLastDataPerDay = async () => {
+    try {
+        // Group data by day and find the first and last entry of each day
+        const result = await IotData.aggregate([
+            {
+                $group: {
+                    _id: {
+                        year: { $year: "$timestamp" },
+                        month: { $month: "$timestamp" },
+                        day: { $dayOfMonth: "$timestamp" }
+                    },
+                    firstEntry: { $first: "$$ROOT" },
+                    lastEntry: { $last: "$$ROOT" }
+                }
+            },
+            {
+                $sort: { "_id.year": 1, "_id.month": 1, "_id.day": 1 }
+            }
+        ]);
+
+        // Iterate over the result and log the first and last data entries for each day
+        result.forEach(dayData => {
+            console.log(`\nDate: ${dayData._id.day}/${dayData._id.month}/${dayData._id.year}`);
+            console.log("First Entry:", dayData.firstEntry);
+            console.log("Last Entry:", dayData.lastEntry);
+        });
+
+        return result; // Optional: Return the result for further processing
+    } catch (error) {
+        console.error("Error finding first and last data per day:", error);
+    }
+};
+
+
+
+
+//  const handleSaveMessage = async (req, res) => {
+//     const data = req.body;
+
+//     // Validate required fields
+//     const requiredFields = ['product_id', 'companyName', 'industryType', 'userName', 'mobileNumber', 'email'];
+//     const requiredFieldsCheck = checkRequiredFields(data, requiredFields);
+//     if (!requiredFieldsCheck.success) {
+//         return res.status(400).json(requiredFieldsCheck);
+//     }
+
+//     // Ensure stackData is provided and valid
+//     const stacks = data.stacks || data.stackData;
+//     if (!Array.isArray(stacks) || stacks.length === 0) {
+//         console.error('Stacks data is required but not provided.');
+//         return res.status(400).json({
+//             success: false,
+//             message: 'Stacks data is required and must include stackName.',
+//             missingFields: ['stacks'],
+//         });
+//     }
+
+//     const time = moment().tz('Asia/Kolkata').format('HH:mm:ss');
+//     const timestamp = moment().tz('Asia/Kolkata').toDate();
+
+//     try {
+//         const lastEntry = await saveOrUpdateLastEntryByUserName(data.userName);
+//         const user = await userdb.findOne({ userName: data.userName });
+//         const thresholds = await CalibrationExceedValues.findOne({ industryType: user.industryType });
+//         if (!thresholds) return res.status(404).json({ success: false, message: 'Industry thresholds not found' });
+
+//         const intervalCheckResults = stacks.map(stack => checkSensorData(stack, lastEntry, data.dataInteval, thresholds));
+//         const highestAlert = intervalCheckResults.reduce((acc, curr) => (curr.color === 'red' ? curr : curr.color === 'orange' && acc.color !== 'red' ? curr : acc), { color: 'green', comment: 'All sensor data values are valid' });
+
+//         const newEntry = new IotData({
+//             product_id: data.product_id,
+//             stackData: stacks,
+//             date: moment().format('DD/MM/YYYY'),
+//             time: time,
+//             companyName: data.companyName,
+//             industryType: data.industryType,
+//             userName: data.userName,
+//             mobileNumber: data.mobileNumber,
+//             email: data.email,
+//             timestamp: new Date(),
+//             validationMessage: data.validationMessage || 'Validated',
+//             validationStatus: data.validationStatus || 'Valid',
+//         });
+
+//         await newEntry.save();
+
+//         // Save or update latest data
+//         await saveOrUpdateLastEntryByUserName(newEntry.toObject());
+
+//         // Emit all stack data in real time to the specific user room
+//         req.io.to(data.userName).emit('stackDataUpdate', {
+//             stackData: stacks, // Send the entire stackData array
+//             timestamp: new Date(),
+//         });
+//         // console.log(`Real-time data emitted to ${data.userName}`, stacks);
+
+//         // Call any exceed value checks after saving the data
+//         await handleExceedValues();
+           
+//         res.status(200).json({
+//             success: true,
+//             message: 'New Entry data saved successfully',
+//             newEntry,
+//         });
+//     } catch (error) {
+//         console.error('Error saving data to MongoDB:', error);
+//         res.status(500).json({
+//             success: false,
+//             message: 'Error saving data to MongoDB',
+//             error: error.message,
+//         });
+//     }
+// };
+
+
+
+// Helper Function to check data exceedance
+const checkExceedance = async (stacks, user) => {
+    const exceedances = [];
+    const industryThresholds = await CalibrationExceedValues.findOne({ industryType: user.industryType });
+
+    if (!industryThresholds) {
+        console.error(`No thresholds found for industry type: ${user.industryType}`);
+        return { success: true, message: 'No thresholds found' };  // Allow save to continue if no thresholds
+    }
+
+    for (const stack of stacks) {
+        for (const parameter of Object.keys(stack)) {
+            const threshold = industryThresholds[parameter];
+            if (threshold && stack[parameter] > threshold) {
+                exceedances.push({
+                    parameter,
+                    value: stack[parameter],
+                    stackName: stack.stackName
+                });
+            }
+        }
+    }
+
+    if (exceedances.length > 0) {
+        return {
+            success: true,
+            exceedanceDetected: true,
+            exceedanceData: {
+                exceedanceComment: 'Parameter exceedance detected',
+                ExceedanceColor: 'red',
+                exceedances,
+            }
+        };
+    }
+
+    return { success: true, exceedanceDetected: false };
+};
+
+// Helper Function to check time interval
+const checkTimeInterval = async (data, user) => {
+    const lastEntry = await IotData.findOne({ userName: data.userName }).sort({ timestamp: -1 });
+
+    if (lastEntry) {
+        const lastEntryTimestamp = new Date(lastEntry.timestamp).getTime(); // Convert to milliseconds
+        const currentTimestamp = Date.now(); // Current time in milliseconds
+        const dataInterval = parseInt(user.dataInteval) * 1000; // Convert interval to milliseconds
+
+        const timeDifference = currentTimestamp - lastEntryTimestamp;
+
+
+        console.log('lastEntryTimestamp:', lastEntryTimestamp);
+        console.log('currentTimestamp:', currentTimestamp);
+        console.log('dataInterval:', dataInterval);
+        console.log('timeDifference:', timeDifference);
+        
+        
+        
+        
+        if (timeDifference > dataInterval) {
+            return {
+                success: true,
+                intervalExceeded: true,
+                intervalData: {
+                    timeIntervalComment: 'Time interval exceeded',
+                    timeIntervalColor: 'purple'
+                }
+            };
+        }
+    }
+
+    return {
+        success: true,
+        intervalExceeded: false,
+        intervalData: {
+            timeIntervalComment: 'Within allowed time interval',
+            timeIntervalColor: 'green'
+        }
+    };
+};
+
+  const checkSensorData = (data) => {
+        // List of Sensor data fields to check
+        const sensorDataFields = [
+            'ph', 'tds', 'turbidity', 'temperature', 'bod', 'cod',
+            'tss', 'orp', 'nitrate', 'ammonicalNitrogen', 'DO', 'chloride'
+        ];
+    
+        // Check if any sensor data field is zero
+        for (let field of sensorDataFields) {
+            if (data[field] === "N/A") {
+                return {
+                    success: false,
+                    message: `Problem in data: ${field} value is 0`,
+                    problemField: field
+                };
+            }
+        }
+        return {
+            success: true,
+            message: "All sensor data values are valid"
+        };
+    };
+    
+
+
+
+    // handle Save message 3-11-2024 
+
+    
+    // const handleSaveMessage = async (req, res) => {
+    //     const data = req.body;
+    
+    //     // Validate required fields
+    //     const requiredFields = ['product_id', 'companyName', 'industryType', 'userName', 'mobileNumber', 'email'];
+    //     const requiredFieldsCheck = checkRequiredFields(data, requiredFields);
+    //     if (!requiredFieldsCheck.success) {
+    //         return res.status(400).json(requiredFieldsCheck);
+    //     }
+    
+    //     // Ensure stackData is provided and valid
+    //     const stacks = data.stacks || data.stackData;
+    //     if (!Array.isArray(stacks) || stacks.length === 0) {
+    //         console.error('Stacks data is required but not provided.');
+    //         return res.status(400).json({
+    //             success: false,
+    //             message: 'Stacks data is required and must include stackName.',
+    //             missingFields: ['stacks'],
+    //         });
+    //     }
+    
+    //     const time = moment().tz('Asia/Kolkata').format('HH:mm:ss');
+    //     const timestamp = moment().tz('Asia/Kolkata').toDate();
+    
+    //     try {
+    //         const newEntry = new IotData({
+    //             product_id: data.product_id,
+    //             stackData: stacks,
+    //             date: moment().format('DD/MM/YYYY'),
+    //             time: time,
+    //             companyName: data.companyName,
+    //             industryType: data.industryType,
+    //             userName: data.userName,
+    //             mobileNumber: data.mobileNumber,
+    //             email: data.email,
+    //             timestamp: new Date(),
+    //             validationMessage: data.validationMessage || 'Validated',
+    //             validationStatus: data.validationStatus || 'Valid',
+    //         });
+    
+    //         await newEntry.save();
+    
+    //         // Save or update latest data
+    //         await saveOrUpdateLastEntryByUserName(newEntry.toObject());
+    
+    //         // Emit all stack data in real time to the specific user room
+    //         req.io.to(data.userName).emit('stackDataUpdate', {
+    //             stackData: stacks, // Send the entire stackData array
+    //             timestamp: new Date(),
+    //         });
+    //         // console.log(`Real-time data emitted to ${data.userName}`, stacks);
+    
+    //         // Call any exceed value checks after saving the data
+    //         await handleExceedValues();
+               
+    //         res.status(200).json({
+    //             success: true,
+    //             message: 'New Entry data saved successfully',
+    //             newEntry,
+    //         });
+    //     } catch (error) {
+    //         console.error('Error saving data to MongoDB:', error);
+    //         res.status(500).json({
+    //             success: false,
+    //             message: 'Error saving data to MongoDB',
+    //             error: error.message,
+    //         });
+    //     }
+    // };
+    
+
+
+handleSaveMessage 04/11/2024
+
+   const handleSaveMessage = async (req, res) => {
+        const data = req.body;
+        const requiredFields = ['product_id', 'companyName', 'industryType', 'userName', 'mobileNumber', 'email'];
+    
+        // Format the date and time (without milliseconds)
+        const date = moment().format('DD/MM/YYYY');
+        const time = moment().tz('Asia/Kolkata').format('HH:mm:ss'); // Format to HH:MM
+    
+        const uniqueIdentifier = `${data.product_id}-${data.userName}-${date}-${time}`;
+        console.log('Unique Identifier:', uniqueIdentifier);
+    
+        // Acquire mutex to ensure only one process can execute the code below at a time
+        await entryMutex.runExclusive(async () => {
+            // Check if an entry with this unique identifier (excluding milliseconds) already exists
+            const existingEntry = await IotData.findOne({
+                product_id: data.product_id,
+                userName: data.userName,
+                date: date,
+                time: time
+            });
+    
+            if (existingEntry) {
+                console.log('Duplicate entry detected, ignoring save.');
+                return res.status(200).json({ success: true, message: 'Duplicate data ignored' });
+            }
+    
+            // Check required fields and stack data
+            const requiredFieldsCheck = checkRequiredFields(data, requiredFields);
+            if (!requiredFieldsCheck.success) {
+                return res.status(400).json(requiredFieldsCheck);
+            }
+            
+            const stacks = data.stacks || data.stackData;
+            if (!Array.isArray(stacks) || stacks.length === 0) {
+                return res.status(400).json({ success: false, message: 'Stacks data is required.', missingFields: ['stacks'] });
+            }
+    
+            const user = await userdb.findOne({ userName: data.userName });
+            const exceedanceCheck = await checkExceedance(stacks, user);
+            const timeIntervalCheck = await checkTimeInterval(data, user);
+    
+            // Construct the data to save, ensuring all required fields are populated initially
+            const newEntryData = {
+                ...data,
+                stackData: stacks,
+                date: date,
+                time: time,
+                timestamp: new Date(),
+                validationMessage: data.validationMessage || 'Validated',
+                validationStatus: data.validationStatus || 'Valid',
+                exceedanceComment: exceedanceCheck.exceedanceDetected ? 'Parameter exceedance detected' : 'Within limits',
+                ExceedanceColor: exceedanceCheck.exceedanceDetected ? 'red' : 'green',
+                timeIntervalComment: timeIntervalCheck.intervalExceeded ? 'Time interval exceeded' : 'Within allowed time interval',
+                timeIntervalColor: timeIntervalCheck.intervalExceeded ? 'purple' : 'green'
+            };
+    
+            try {
+                const newEntry = new IotData(newEntryData);
+                await newEntry.save();
+    
+                await saveOrUpdateLastEntryByUserName(newEntry.toObject());
+                // req.io.to(data.userName).emit('stackDataUpdate', {
+                //      stackData: stacks,
+
+                //      timestamp: new Date() 
+                //     });
+
+                req.io.to(data.userName).emit('stackDataUpdate', {
+                    stackData: stacks.map(stack => ({
+                        ...stack,
+                        ExceedanceColor: newEntryData.ExceedanceColor,
+                        timeIntervalColor: newEntryData.timeIntervalColor,
+                        exceedanceComment: newEntryData.exceedanceComment,
+                        timeIntervalComment: newEntryData.timeIntervalComment
+                    })),
+                    timestamp: new Date(),
+                });
+                await handleExceedValues();
+    
+                res.status(200).json({
+                    success: true,
+                    message: 'New Entry data saved successfully',
+                    newEntry,
+                    exceedances: exceedanceCheck.exceedances || [],
+                    timeIntervalExceeded: timeIntervalCheck.intervalExceeded
+                });
+            } catch (error) {
+                console.error('Error saving data to MongoDB:', error);
+                res.status(500).json({ success: false, message: 'Error saving data to MongoDB', error: error.message });
+            }
+        });
+    };
+
+// removing the voltage,current,power,and flowRate code of handleSaveMessage 04/11/2024
+
+ const handleSaveMessage = async (req, res) => {
+        const data = req.body;
+    
+        // Perform validations
+        const requiredFieldsCheck = checkRequiredFields(data, ['product_id', 'companyName', 'industryType', 'userName', 'mobileNumber', 'email']);
+        if (!requiredFieldsCheck.success) {
+            return res.status(400).json(requiredFieldsCheck);
+        }
+    
+        const stacks = data.stacks || data.stackData;
+        if (!Array.isArray(stacks) || stacks.length === 0) {
+            return res.status(400).json({ success: false, message: 'Stacks data is required.', missingFields: ['stacks'] });
+        }
+    
+        const user = await userdb.findOne({ userName: data.userName });
+        const exceedanceCheck = await checkExceedance(stacks, user);
+        const timeIntervalCheck = await checkTimeInterval(data, user);
+    
+        // Format date and time
+        const date = moment().format('DD/MM/YYYY');
+        const time = moment().tz('Asia/Kolkata').format('HH:mm:ss');
+    
+        // Emit real-time data before saving
+        req.io.to(data.userName).emit('stackDataUpdate', {
+            stackData: stacks.map(stack => ({
+                ...stack,
+                ExceedanceColor: exceedanceCheck.exceedanceDetected ? 'red' : 'green',
+                timeIntervalColor: timeIntervalCheck.intervalExceeded ? 'purple' : 'green',
+                exceedanceComment: exceedanceCheck.exceedanceDetected ? 'Parameter exceedance detected' : 'Within limits',
+                timeIntervalComment: timeIntervalCheck.intervalExceeded ? 'Time interval exceeded' : 'Within allowed time interval'
+            })),
+            timestamp: new Date(),
+        });
+    
+        // Remove power and current before saving to database
+        const sanitizedStackData = stacks.map(stack => {
+            const { power, current,voltage,flowRate, ...restOfStack } = stack;
+            return restOfStack;
+        });
+    
+        const newEntryData = {
+            ...data,
+            stackData: sanitizedStackData,
+            date,
+            time,
+            timestamp: new Date(),
+            exceedanceComment: exceedanceCheck.exceedanceDetected ? 'Parameter exceedance detected' : 'Within limits',
+            ExceedanceColor: exceedanceCheck.exceedanceDetected ? 'red' : 'green',
+            timeIntervalComment: timeIntervalCheck.intervalExceeded ? 'Time interval exceeded' : 'Within allowed time interval',
+            timeIntervalColor: timeIntervalCheck.intervalExceeded ? 'purple' : 'green',
+            validationMessage: data.validationMessage || 'Validated',
+            validationStatus: data.validationStatus || 'Valid',
+        };
+    
+        // Save to database
+        try {
+            const newEntry = new IotData(newEntryData);
+            await newEntry.save();
+            res.status(200).json({
+                success: true,
+                message: 'New Entry data saved successfully',
+                newEntry,
+            });
+        } catch (error) {
+            console.error('Error saving data:', error);
+            res.status(500).json({ success: false, message: 'Error saving data', error: error.message });
+        }
+    };
+    
