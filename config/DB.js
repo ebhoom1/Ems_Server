@@ -5,8 +5,8 @@ const mongoose=require('mongoose');
 const DB=async()=>{
     try {
         mongoose.connect(process.env.DB_URL,{
-            useNewUrlParser:true,
-            useUnifiedTopology:true,
+            // useNewUrlParser:true,
+            // useUnifiedTopology:true,
             serverSelectionTimeoutMS: 30000, // 30 seconds
             socketTimeoutMS: 45000, // 45 seconds
         })
