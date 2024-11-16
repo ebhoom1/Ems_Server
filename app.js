@@ -328,8 +328,8 @@ app.use((err, req, res, next) => {
 });
 
 // Serve React app for all other routes
-app.use(express.static(path.join(__dirname, 'New_Ocems_App/build')));
+app.use(express.static(path.join(__dirname, './build')));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'New_Ocems_App/build', 'index.html'));
+    res.sendFile(path.join(__dirname, './build', 'index.html'));
 });
